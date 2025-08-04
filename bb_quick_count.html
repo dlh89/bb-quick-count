@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BB Quick Count</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BB Quick Count</h1>
+    <div id="question" class="card">
+      <p><strong>Stack:</strong> <span id="stack"></span></p>
+      <p><strong>Blinds:</strong> <span id="blinds"></span></p>
+    </div>
+
+    <button id="showAnswerBtn">Show Answer</button>
+
+    <div id="answer" class="card hidden">
+      <p><strong>Big Blinds:</strong> <span id="bbCount"></span></p>
+      <pre id="breakdown"></pre>
+      <button id="correctBtn">✅ Correct</button>
+      <button id="incorrectBtn">❌ Incorrect</button>
+    </div>
+
+    <div id="stats" class="card">
+      <p><strong>Answered:</strong> <span id="total"></span></p>
+      <p><strong>Correct:</strong> <span id="correct"></span></p>
+      <p><strong>Accuracy:</strong> <span id="accuracy"></span>%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
