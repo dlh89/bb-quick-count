@@ -32,7 +32,7 @@ function getMentalTip(bigBlind, stack) {
 
   switch (baseBB) {
     case 150:
-      return `Tip: Divide by ${divisorText}, then multiply result by 2/3.\n${stack} ÷ ${divisorText} = ${(stack / divisor).toFixed(2)} → × 2/3 = ${((stack / divisor) * 2 / 3).toFixed(2)} BB`;
+      return `Tip: Divide by ${divisorText}, then double it, then divide by 3.\n${stack} ÷ ${divisorText} = ${(stack / divisor).toFixed(2)} × 2 = ${((stack / divisor) * 2).toFixed(2)} → ÷ 3 = ${(((stack / divisor) * 2 / 3)).toFixed(2)} BB`;
     case 200:
       return `Tip: Divide by ${divisorText}, then divide result by 2.\n${stack} ÷ ${divisorText} = ${(stack / divisor).toFixed(2)} → ÷ 2 = ${(stack / (divisor * 2)).toFixed(2)} BB`;
     case 250:
